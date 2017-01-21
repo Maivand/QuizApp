@@ -13,6 +13,7 @@
 		9226801F1E2E5CB20045B207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9226801D1E2E5CB20045B207 /* Main.storyboard */; };
 		922680211E2E5CB20045B207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 922680201E2E5CB20045B207 /* Assets.xcassets */; };
 		922680241E2E5CB20045B207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922680221E2E5CB20045B207 /* LaunchScreen.storyboard */; };
+		9226802D1E2E5DE70045B207 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 9226802C1E2E5DE70045B207 /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		922680201E2E5CB20045B207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		922680231E2E5CB20045B207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		922680251E2E5CB20045B207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9226802B1E2E5DE70045B207 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		9226802C1E2E5DE70045B207 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +61,13 @@
 		922680131E2E5CB20045B207 /* SimpleQuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				9226801D1E2E5CB20045B207 /* Main.storyboard */,
 				922680171E2E5CB20045B207 /* AppDelegate.h */,
 				922680181E2E5CB20045B207 /* AppDelegate.m */,
 				9226801A1E2E5CB20045B207 /* ViewController.h */,
 				9226801B1E2E5CB20045B207 /* ViewController.m */,
-				9226801D1E2E5CB20045B207 /* Main.storyboard */,
+				9226802B1E2E5DE70045B207 /* Model.h */,
+				9226802C1E2E5DE70045B207 /* Model.m */,
 				922680201E2E5CB20045B207 /* Assets.xcassets */,
 				922680221E2E5CB20045B207 /* LaunchScreen.storyboard */,
 				922680251E2E5CB20045B207 /* Info.plist */,
@@ -153,6 +158,7 @@
 				9226801C1E2E5CB20045B207 /* ViewController.m in Sources */,
 				922680191E2E5CB20045B207 /* AppDelegate.m in Sources */,
 				922680161E2E5CB20045B207 /* main.m in Sources */,
+				9226802D1E2E5DE70045B207 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +313,7 @@
 				9226802A1E2E5CB20045B207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
