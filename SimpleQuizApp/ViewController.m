@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *wrongeAnswerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *answerInfoLabel;
 @property (weak, nonatomic) IBOutlet UIButton *startNewGameBtn;
+@property (nonatomic) NSMutableArray *shuffleStringArray;
 
 @end
 
@@ -112,13 +113,43 @@
 -(void)setQuestionsAndAnswersToView{
     
     
+    self.shuffleStringArray = [NSMutableArray arrayWithObjects:@"felsvar1",@"felsvar2",@"felsvar3",@"rättsvar", nil];
+    /*for (int i = 0; i < [self.shuffleStringArray.count]; i++) {
+        NSString *svar = i;
+    }*/
     
-    [self.btnOne setTitle:self.model.qurentQuestion[@"felsvar1"] forState:(UIControlStateNormal)];
-    [self.btnTwo setTitle:self.model.qurentQuestion[@"felsvar2"] forState:(UIControlStateNormal)];
+    for (int i = 4; i > 0; i--) {
+        
+        int randIdx = arc4random() % i;
+        switch (i){
+        
+            case 1 :
+                [self.btnOne setTitle:self.model.qurentQuestion[[self.shuffleStringArray objectAtIndex:randIdx]] forState:(UIControlStateNormal)];
+                [self.shuffleStringArray removeObjectAtIndex:randIdx];
+                break;
+            case 2 :
+                [self.btnTwo setTitle:self.model.qurentQuestion[[self.shuffleStringArray objectAtIndex:randIdx]] forState:(UIControlStateNormal)];
+                [self.shuffleStringArray removeObjectAtIndex:randIdx];
+                break;
+            case 3 :
+                [self.btnThree setTitle:self.model.qurentQuestion[[self.shuffleStringArray objectAtIndex:randIdx]] forState:(UIControlStateNormal)];
+                [self.shuffleStringArray removeObjectAtIndex:randIdx];
+                break;
+            case 4 :
+                [self.btnFour setTitle:self.model.qurentQuestion[[self.shuffleStringArray objectAtIndex:randIdx]] forState:(UIControlStateNormal)];
+                [self.shuffleStringArray removeObjectAtIndex:randIdx];
+                break;
+    }
+    
+    
+    
+    /*[self.btnTwo setTitle:self.model.qurentQuestion[@"felsvar2"] forState:(UIControlStateNormal)];
     [self.btnThree setTitle:self.model.qurentQuestion[@"felsvar3"] forState:(UIControlStateNormal)];
     [self.btnFour setTitle:self.model.qurentQuestion[@"rättsvar"] forState:(UIControlStateNormal)];
+     */
     self.questionLabel.text = self.model.qurentQuestion[@"fråga"];
 
+}
 }
 
 -(IBAction)disableBtns{
@@ -126,7 +157,7 @@
     self.btnTwo.enabled = NO;
     self.btnThree.enabled = NO;
     self.btnFour.enabled = NO;
-    self.answerInfoLabel.hidden = YES;
+    
 
 }
 -(IBAction)enableBtns{
@@ -148,6 +179,7 @@
     self.btnFour.hidden = x;
     self.correctPointsLabel.hidden = x;
     self.wrongeAnswerLabel.hidden = x;
+    self.answerInfoLabel.hidden = x;
 }
 
 
