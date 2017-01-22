@@ -28,7 +28,7 @@
                          };
     
     NSDictionary *q2 = @{
-                         @"fråga" : @"Vem ropar på Leif?",
+                         @"fråga" : @"Vem ropar Leif?",
                          @"felsvar1" : @"Tobbe",
                          @"felsvar2" : @"En av dina kompisar",
                          @"felsvar3" : @"öhh?",
@@ -36,61 +36,61 @@
                          };
     
     NSDictionary *q3 = @{
-                         @"fråga" : @"Frågan är 3",
-                         @"felsvar1" : @"svar13",
-                         @"felsvar2" : @"svar23",
-                         @"felsvar3" : @"svar33",
-                         @"rättsvar" : @"svar43",
+                         @"fråga" : @"Vilken legendarisk munk uppfann champange?",
+                         @"felsvar1" : @"Saint Martini",
+                         @"felsvar2" : @"Delamotte",
+                         @"felsvar3" : @"René-James Lallier",
+                         @"rättsvar" : @"Dom Perignon",
                          };
     
     NSDictionary *q4 = @{
-                         @"fråga" : @"Frågan är 4",
-                         @"felsvar1" : @"svar14",
-                         @"felsvar2" : @"svar24",
-                         @"felsvar3" : @"svar34",
-                         @"rättsvar" : @"svar44",
+                         @"fråga" : @"Vilken är den 7e planeten från solen?",
+                         @"felsvar1" : @"Saturn",
+                         @"felsvar2" : @"Venus",
+                         @"felsvar3" : @"Mars",
+                         @"rättsvar" : @"Uranus",
                          };
     NSDictionary *q5 = @{
-                         @"fråga" : @"Frågan är 5",
-                         @"felsvar1" : @"svar14",
-                         @"felsvar2" : @"svar24",
-                         @"felsvar3" : @"svar34",
-                         @"rättsvar" : @"svar44",
+                         @"fråga" : @"Vilket nr har Ibra på sin united tröja?",
+                         @"felsvar1" : @"8",
+                         @"felsvar2" : @"11",
+                         @"felsvar3" : @"10",
+                         @"rättsvar" : @"9",
                          };
     NSDictionary *q6 = @{
-                         @"fråga" : @"Frågan är 6",
-                         @"felsvar1" : @"svar14",
-                         @"felsvar2" : @"svar24",
-                         @"felsvar3" : @"svar34",
-                         @"rättsvar" : @"svar44",
+                         @"fråga" : @"Vilken typ av insekt är en spansk fluga",
+                         @"felsvar1" : @"Fluga",
+                         @"felsvar2" : @"Nyckelpiga",
+                         @"felsvar3" : @"Häst",
+                         @"rättsvar" : @"Skalbagge",
                          };
     NSDictionary *q7 = @{
-                         @"fråga" : @"Frågan är 7",
-                         @"felsvar1" : @"svar14",
-                         @"felsvar2" : @"svar24",
-                         @"felsvar3" : @"svar34",
-                         @"rättsvar" : @"svar44",
+                         @"fråga" : @"Arabiska siffror har sitt ursprung i vilket land",
+                         @"felsvar1" : @"Saudi Arabien",
+                         @"felsvar2" : @"Irak",
+                         @"felsvar3" : @"Turkiet",
+                         @"rättsvar" : @"Indien",
                          };
     NSDictionary *q8 = @{
-                         @"fråga" : @"Frågan är 8",
-                         @"felsvar1" : @"svar14",
-                         @"felsvar2" : @"svar24",
-                         @"felsvar3" : @"svar34",
-                         @"rättsvar" : @"svar44",
+                         @"fråga" : @"Vilket land uppfann fotboll",
+                         @"felsvar1" : @"Tyskland",
+                         @"felsvar2" : @"Spanien",
+                         @"felsvar3" : @"Italien",
+                         @"rättsvar" : @"England",
                          };
     NSDictionary *q9 = @{
-                         @"fråga" : @"Frågan är 9",
-                         @"felsvar1" : @"svar14",
-                         @"felsvar2" : @"svar24",
-                         @"felsvar3" : @"svar34",
-                         @"rättsvar" : @"svar44",
+                         @"fråga" : @"Vilken nation uppfann kilten?",
+                         @"felsvar1" : @"Island",
+                         @"felsvar2" : @"England",
+                         @"felsvar3" : @"Skotland",
+                         @"rättsvar" : @"Irland",
                          };
     NSDictionary *q10 = @{
-                         @"fråga" : @"Frågan är 10",
-                         @"felsvar1" : @"svar14",
-                         @"felsvar2" : @"svar24",
-                         @"felsvar3" : @"svar34",
-                         @"rättsvar" : @"svar44",
+                         @"fråga" : @"Vilken färg är den svarta lådan på ett plan",
+                         @"felsvar1" : @"Grön",
+                         @"felsvar2" : @"Blå",
+                         @"felsvar3" : @"Svart",
+                         @"rättsvar" : @"Orange",
                          };
     
     self.questionsArray = [NSMutableArray arrayWithObjects:
