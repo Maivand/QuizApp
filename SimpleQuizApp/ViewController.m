@@ -56,10 +56,20 @@
         self.answerInfoLabel.text =@"RÄTT SVAR";
         btn.backgroundColor = [UIColor greenColor];
         [self endGameChecker:self.model.checkIfGameOver];
+        self.nextQuestionBtn.hidden = NO;
+        //if gameover hidebutton nextquestion
+        if (self.model.checkIfGameOver == YES) {
+            self.nextQuestionBtn.hidden = YES;
+        }
     }else {
         self.answerInfoLabel.text =@"FEL FEL FEL!";
         btn.backgroundColor = [UIColor redColor];
         [self endGameChecker:self.model.checkIfGameOver];
+        self.nextQuestionBtn.hidden = NO;
+        //if gameover hidebutton nextquestion
+        if (self.model.checkIfGameOver == YES) {
+            self.nextQuestionBtn.hidden = YES;
+        }
     }
     
     [self disableBtns];
@@ -76,6 +86,7 @@
     [self.model setRandomQuestionDictionaryToQQuestion];
     [self setQuestionsAndAnswersToView];
     [self enableBtns];
+    self.nextQuestionBtn.hidden = YES;
 }
 
 - (IBAction)startNewGame:(id)sender {
@@ -85,7 +96,7 @@
     [self setQuestionsAndAnswersToView];
     [self getNewQuestion];
     self.startNewGameBtn.hidden = YES;
-    self.nextQuestionBtn.hidden = NO;
+    self.nextQuestionBtn.hidden = YES;
     self.correctPointsLabel.text =@"0";
     self.wrongeAnswerLabel.text =@"0";
 }
